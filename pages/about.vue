@@ -103,10 +103,10 @@
                                 </div>
     
                                 <!-- what i do contain end -->
-                                <div class="">
+                                <!--div class="">
                                     <div class="bg-[#F8FBFB] dark:bg-[#0D0D0D] max-w-full h-auto py-10 rounded-xl">
                                         <h3 class="text-center dark:text-white text-6xl mb-3 font-semibold">Clients</h3>
-                                        <!-- slider and slider items start -->
+                                       
                                         <div class="slickTwo flex flex-row space-x-2 px-2 pt-8">
                                             <div>
                                                 <img class="overflow-hidden brand-img" src="../assets/img/slider/brand.png"
@@ -137,9 +137,9 @@
                                                     alt="brand" />
                                             </div>
                                         </div>
-                                        <!-- slider and slider items end -->
+                                       
                                     </div>
-                                </div>
+                                </div-->
     
                                 
                             </div>
