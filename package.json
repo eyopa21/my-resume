@@ -14,11 +14,9 @@
         "tailwindcss": "^3.1.4"
     },
     "dependencies": {
-        "@apollo/client": "^3.6.9",
         "@heroicons/vue": "^1.0.6",
         "@vee-validate/rules": "^4.5.11",
         "graphql": "^16.5.0",
-        "vee-validate": "^4.5.11",
-        "vue-apollo": "^3.1.0"
+        "vee-validate": "^4.5.11"
     }
 }
