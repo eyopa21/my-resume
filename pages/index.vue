@@ -12,7 +12,7 @@
 
             <a v-for="i in 4" :key="i" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                 <span class="socialbtn text-[#1773EA]">
-                    <img src="./svg/twitter.svg" alt="" >
+                    <img src="../assets/svg/twitter.svg" alt="" >
                 </span>
             </a>
 
