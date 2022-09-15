@@ -1,23 +1,20 @@
 <template>
-  <div>
-   
-      <div class="bg-black">
-        <NuxtLayout name="default">
-          <NuxtPage  />
-        </NuxtLayout>
+  <div class=" scroll-smooth">
+
+    <body class='h-full'>
+      <!--Nav /-->
+      <div class="text-gray-800 antialiased">
+
+        <Body />
       </div>
-             
+
+      <Footer />
+
+    </body>
   </div>
-
-
-<!--Modal v-if="layout.showModal" class="fixed top-64"/-->
-
-  <Head >
-  </Head>
 </template>
 
 <script setup>
 
-  const layout = useLayout();
 
 </script>
