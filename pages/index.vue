@@ -4,47 +4,48 @@
         data-aos="fade">
 
         <img class="rounded-full w-[250px] h-[250px] 2xl:w-[280px] 2xl:h-[280px] object-fill"
-            src="https://firebasestorage.googleapis.com/v0/b/gbi-date.appspot.com/o/images%2Feyobaaaaaaaaa.jpg?alt=media&token=fcd6b46e-51ab-434f-97dd-70ae19761d06" alt="about avatar" />
+            src="/eyoba.jpg"
+            alt="about avatar" />
         <h3 class="mt-6 mb-1 text-5xl font-semibold dark:text-white"> Eyob Nigussie</h3>
         <p class="mb-4 text-[#7B7B7B]">Software Engineer</p>
 
         <div class="flex space-x-3">
 
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer">
                 <span class="socialbtn text-[#1773EA]">
-                    <img src="/svg/linkedin.svg" alt="" >
+                    <img src="/svg/whatsapp.svg" class="w-8 h-8" alt="">
                 </span>
-                
+
             </a>
             <a href="https://www.github.com/" target="_blank" rel="noopener noreferrer">
                 <span class="socialbtn text-[#1773EA]">
-                    <img src="/svg/github.svg" alt="" >
+                    <img src="/svg/github.svg" class="w-8 h-8" alt="">
                 </span>
-                
+
             </a>
             <a href="https://www.telegram.com/" target="_blank" rel="noopener noreferrer">
                 <span class="socialbtn text-[#1773EA]">
-                    <img src="/svg/telegram.svg" alt="" >
+                    <img src="/svg/telegram.svg" class="w-8 h-8" alt="">
                 </span>
-                
+
             </a>
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                <span class="socialbtn text-[#1773EA]">
-                    <img src="/svg/facebook.svg" alt="" >
+            <a  href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <span class="socialbtn fill-blue-400 text-[#1773EA]">
+                    <img src="/svg/facebook.svg" class="w-8 h-8" alt="">
                 </span>
-                
+
             </a>
 
 
-           
-            
-           
+
+
+
 
         </div>
 
-        <button class="dowanload-btn">
+        <NuxtLink to="/contact" class="dowanload-btn">
             <PhoneIcon class="w-5 h-5 mr-2" /> Contact Me
-        </button>
+        </NuxtLink>
     </div>
 </template>
 

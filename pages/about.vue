@@ -17,7 +17,7 @@
                                         <div class="col-span-12 md:col-span-4">
                                             <!-- about me image -->
                                             <img class="w-full md:w-[330px] md:h-[400px] object-cover overflow-hidden rounded-[35px] mb-3 md:mb-0"
-                                                src="https://firebasestorage.googleapis.com/v0/b/gbi-date.appspot.com/o/images%2Feyobaaaaaaaaa.jpg?alt=media&token=fcd6b46e-51ab-434f-97dd-70ae19761d06" alt="about image" />
+                                                src="/eyoba.jpg" alt="about image" />
                                         </div>
                                         <div class="col-span-12 md:col-span-8 space-y-2.5 text-gray-400 ">
                                             <!-- who am i content  -->
@@ -89,14 +89,13 @@
                                     <h3 class="text-[35px] dark:text-white font-medium pb-5"> What I do! </h3>
                                     <div class="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
                                         
-                                        <div v-for="i in 6" :key="i" class="about-box dark:bg-transparent bg-[#f3faff]">
+                                        <div v-for="service in services" :key="service" class="about-box dark:bg-transparent bg-[#f3faff]">
                                             <img class="w-10 h-10 object-contain block" src="/unity.jpg"
                                                 alt="icon" />
 
                                             <div class="space-y-2">
-                                                <h3 class="dark:text-white text-2xl font-semibold"> Web Development </h3>
-                                                <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]"> Lorem ipsum dolor
-                                                    sit amet, consectetuer adipiscing elit, sed diam euismod volutpat. </p>
+                                                <h3 class="dark:text-white text-2xl font-semibold">{{service.title}} </h3>
+                                                <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]">{{service.subtitle}} </p>
                                             </div>
                                         </div>
                                     </div>
@@ -156,4 +155,27 @@
 <script setup>
 import { PhoneIcon, DeviceMobileIcon, LocationMarkerIcon, CalendarIcon,MailIcon  } from '@heroicons/vue/solid';
 
+
+const services = ref([
+    {
+        title: ' Web Development',
+        subtitle: 'Beautifull and eye catching websites and webapplications using latest technologies.',
+        image: '/unity.jpg'
+    },
+    {
+        title: ' Website design',
+        subtitle: 'Beautifull and eye catching websites and webApplications using latest technologies like figma',
+        image: '/unity.jpg'
+    },
+    {
+        title: ' Application Development',
+        subtitle: 'Beautifull and eye catching websites and webApplications using latest technologies',
+        image: '/unity.jpg'
+    },
+    {
+        title: ' Game Development',
+        subtitle: 'Beautifull and eye catching websites and webApplications using latest technologies',
+        image: '/unity.jpg'
+    }
+])
 </script>
