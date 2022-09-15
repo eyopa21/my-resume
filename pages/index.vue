@@ -12,7 +12,7 @@
 
             <a v-for="i in 4" :key="i" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                 <span class="socialbtn text-[#1773EA]">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/gbi-date.appspot.com/o/images%2Fgbi-journal.png?alt=media&token=0bd1bcaf-a414-40ed-a075-debd04f4b557" alt="" >
+                    <img src="../assets/svg/telegram.svg" alt="" >
                 </span>
             </a>
 

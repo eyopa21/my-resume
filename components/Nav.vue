@@ -1,12 +1,12 @@
 <template>
     <header class="bg-black flex justify-between items-center fixed top-0 left-0 w-full lg:static z-[1111111111]">
-        <div
-            class="flex justify-between w-full px-4 lg:px-0  lg:bg-transparent  bg-black">
+        <div class="flex justify-between w-full px-4 lg:px-0  lg:bg-transparent  bg-black">
             <div class="flex justify-between w-full items-center space-x-4 lg:my-8 my-5">
                 <!-- website logo -->
                 <a class="text-5xl font-semibold" href="index.html">
-                   
-                <div class="h-[26px] lg:h-[32px] text-white uppercase text-4xl ml-2 tracking-wider font-logo">eyoba</div>
+
+                    <div class="h-[26px] lg:h-[32px] text-white uppercase text-4xl ml-2 tracking-wider font-logo">eyoba
+                    </div>
                 </a>
                 <div class="flex items-center">
                     <!-- light and dark mode button -->
@@ -28,41 +28,53 @@
         <nav class="hidden lg:block ">
             <ul class="flex my-12">
                 <li>
-                    <NuxtLink to="/" class="menu-item-two " :class="$route.fullPath=='/' ? 'menu-item-two-active':'menu-item-two'">
+                    <NuxtLink to="/" class="menu-item-two "
+                        :class="$route.fullPath=='/' ? 'menu-item-two-active':'menu-item-two'">
                         <span class="mr-2 text-base">
-                           <HomeIcon class="w-4 h-4 mb-[2px]"/>
-                        </span> Home </NuxtLink>
+                            <HomeIcon class="w-4 h-4 mb-[2px]" />
+                        </span> Home
+                    </NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/about" class="menu-item-two" :class="$route.fullPath=='/about' ? 'menu-item-two-active':'menu-item-two'" >
+                    <NuxtLink to="/about" class="menu-item-two"
+                        :class="$route.fullPath=='/about' ? 'menu-item-two-active':'menu-item-two'">
                         <span class="mr-2 text-base">
-                            <HomeIcon class="w-4 h-4 mb-[2px]"/>
-                        </span> About </NuxtLink>
+                            <HomeIcon class="w-4 h-4 mb-[2px]" />
+                        </span> About
+                    </NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/resume" class="menu-item-two" :class="$route.fullPath=='/resume' ? 'menu-item-two-active':'menu-item-two'">
+                    <NuxtLink to="/resume" class="menu-item-two"
+                        :class="$route.fullPath=='/resume' ? 'menu-item-two-active':'menu-item-two'">
                         <span class="mr-2 text-base">
-                            <IdentificationIcon class="w-4 h-4 mb-[2px]"/>
-                        </span> Resume </NuxtLink>
+                            <IdentificationIcon class="w-4 h-4 mb-[2px]" />
+                        </span> Resume
+                    </NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="projects" class="menu-item-two" :class="$route.fullPath=='/projects' ? 'menu-item-two-active':'menu-item-two'">
+                    <NuxtLink to="projects" class="menu-item-two"
+                        :class="$route.fullPath=='/projects' ? 'menu-item-two-active':'menu-item-two'">
                         <span class="mr-2 text-base">
-                            <BriefcaseIcon class="w-4 h-4 mb-[2px]"/>
-                        </span> Works </NuxtLink>
+                            <BriefcaseIcon class="w-4 h-4 mb-[2px]" />
+                        </span> Works
+                    </NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="blogs" class="menu-item-two" :class="$route.fullPath=='/blogs' ? 'menu-item-two-active':'menu-item-two'">
+                    <NuxtLink to="blogs" class="menu-item-two"
+                        :class="$route.fullPath=='/blogs' ? 'menu-item-two-active':'menu-item-two'">
                         <span class="mr-2 text-base">
-                            <NewspaperIcon class="w-4 h-4 mb-[2px]"/>
-                           
-                        </span> Blogs </NuxtLink>
+                            <NewspaperIcon class="w-4 h-4 mb-[2px]" />
+
+                        </span> Blogs
+                    </NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/contact" class="menu-item-two" :class="$route.fullPath=='/contact' ? 'menu-item-two-active':'menu-item-two'">
+                    <NuxtLink to="/contact" class="menu-item-two"
+                        :class="$route.fullPath=='/contact' ? 'menu-item-two-active':'menu-item-two'">
                         <span class="mr-2 text-base">
-                            <PhoneIcon class="w-4 h-4 mb-[2px]"/>
-                        </span> Contact </NuxtLink>
+                            <PhoneIcon class="w-4 h-4 mb-[2px]" />
+                        </span> Contact
+                    </NuxtLink>
                 </li>
                 <li>
                     <!-- light and dark mode button -->
@@ -80,40 +92,52 @@
             <ul
                 class="block rounded-b-[20px] shadow-md absolute left-0 top-20 z-[22222222222222] w-full bg-white dark:bg-[#1d1d1d]">
                 <li>
-                    <NuxtLink class="mobile-menu-items" to="/" :class="$route.fullPath=='/' ? 'mobile-menu-items-active':'mobile-menu-items'">
+                    <NuxtLink class="mobile-menu-items" to="/"
+                        :class="$route.fullPath=='/' ? 'mobile-menu-items-active':'mobile-menu-items'">
                         <span class="mr-2 text-xl">
-                            <HomeIcon class="w-4 h-4"/>
-                        </span> Home </NuxtLink>
+                            <HomeIcon class="w-4 h-4" />
+                        </span> Home
+                    </NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink class="mobile-menu-items" to="/about"  :class="$route.fullPath=='/about' ? 'mobile-menu-items-active':'mobile-menu-items'">
+                    <NuxtLink class="mobile-menu-items" to="/about"
+                        :class="$route.fullPath=='/about' ? 'mobile-menu-items-active':'mobile-menu-items'">
                         <span class="mr-2 text-xl">
-                            <UserIcon class="w-4 h-4"/>
-                        </span> About </NuxtLink>
+                            <UserIcon class="w-4 h-4" />
+                        </span> About
+                    </NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink class="mobile-menu-items" to="/resume"  :class="$route.fullPath=='/resume' ? 'mobile-menu-items-active':'mobile-menu-items'">
+                    <NuxtLink class="mobile-menu-items" to="/resume"
+                        :class="$route.fullPath=='/resume' ? 'mobile-menu-items-active':'mobile-menu-items'">
                         <span class="mr-2 text-xl">
-                            <IdentificationIcon class="w-4 h-4"/>
-                        </span> Resume </NuxtLink>
+                            <IdentificationIcon class="w-4 h-4" />
+                        </span> Resume
+                    </NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink class="mobile-menu-items" to="/projects"  :class="$route.fullPath=='/projects' ? 'mobile-menu-items-active':'mobile-menu-items'">
+                    <NuxtLink class="mobile-menu-items" to="/projects"
+                        :class="$route.fullPath=='/projects' ? 'mobile-menu-items-active':'mobile-menu-items'">
                         <span class="mr-2 text-xl">
-                            <BriefcaseIcon class="w-4 h-4"/>
-                        </span> Works </NuxtLink>
+                            <BriefcaseIcon class="w-4 h-4" />
+                        </span> Works
+                    </NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink class="mobile-menu-items" to="/blogs"  :class="$route.fullPath=='/blogs' ? 'mobile-menu-items-active':'mobile-menu-items'">
+                    <NuxtLink class="mobile-menu-items" to="/blogs"
+                        :class="$route.fullPath=='/blogs' ? 'mobile-menu-items-active':'mobile-menu-items'">
                         <span class="mr-2 text-xl">
-                            <NewspaperIcon class="w-4 h-4"/>
-                        </span> Blogs </NuxtLink>
+                            <NewspaperIcon class="w-4 h-4" />
+                        </span> Blogs
+                    </NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink class="mobile-menu-items" to="/contact"  :class="$route.fullPath=='/contact' ? 'mobile-menu-items-active':'mobile-menu-items'">
+                    <NuxtLink class="mobile-menu-items" to="/contact"
+                        :class="$route.fullPath=='/contact' ? 'mobile-menu-items-active':'mobile-menu-items'">
                         <span class="mr-2 text-xl">
-                            <PhoneIcon class="w-4 h-4"/>
-                        </span> Contact </NuxtLink>
+                            <PhoneIcon class="w-4 h-4" />
+                        </span> Contact
+                    </NuxtLink>
                 </li>
             </ul>
         </nav>

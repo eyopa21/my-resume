@@ -14,9 +14,9 @@
     
 </template>
 <script setup>
-//import{useField} from 'vee-validate'
+import{useField} from 'vee-validate'
 const props = defineProps(['name', 'type', 'placeholder', 'label', 'rule'])
 
 
-//const { value, errorMessage } = useField(props.name, props.rule);
+const { value, errorMessage } = useField(props.name, props.rule);
 </script>
