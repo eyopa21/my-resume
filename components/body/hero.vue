@@ -23,3 +23,8 @@
             </svg> </div>
     </div>
 </template>
+<script setup>
+    import { HomeIcon, PhoneIcon, MenuIcon, XIcon } from "@heroicons/vue/solid";
+    
+    const showNav = ref(false)
+    </script>
