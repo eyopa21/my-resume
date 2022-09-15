@@ -90,7 +90,7 @@
                                     <div class="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
                                         
                                         <div v-for="i in 6" :key="i" class="about-box dark:bg-transparent bg-[#f3faff]">
-                                            <img class="w-10 h-10 object-contain block" src="../assets/img/slider/brand1.png"
+                                            <img class="w-10 h-10 object-contain block" src="../assets/img/unity.jpg"
                                                 alt="icon" />
 
                                             <div class="space-y-2">
