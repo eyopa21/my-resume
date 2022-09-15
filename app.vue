@@ -1,16 +1,16 @@
 <template>
   <div class=" scroll-smooth">
 
-    <body class='h-full'>
-      <!--Nav /-->
-      <div class="text-gray-800 antialiased">
-
-        <Body />
+    <div>
+   
+      <div class="bg-black">
+        <NuxtLayout name="default">
+          <NuxtPage  />
+        </NuxtLayout>
       </div>
+             
+  </div>
 
-      <Footer />
-
-    </body>
   </div>
 </template>
 
