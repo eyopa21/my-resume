@@ -93,5 +93,5 @@
 </template>
 <script setup>
 import { AdjustmentsIcon, PhoneIcon, HomeIcon, MenuIcon, XIcon } from '@heroicons/vue/solid';
-
+const showNav = ref(false);
 </script>
