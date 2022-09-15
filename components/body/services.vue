@@ -65,7 +65,7 @@
                 <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
                     <div
                         class="relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-lg rounded-lg bg-pink-600">
-                        <img alt="..." src="../assets/img/unity.jpg" class="w-full align-middle rounded-t-lg" />
+                        <img alt="..." src="../../assets/img/unity.jpg" class="w-full align-middle rounded-t-lg" />
                         <blockquote class="relative p-8 mb-4">
                             <h4 class="text-xl font-bold text-white"> Top Notch Services </h4>
                             <p class="text-md font-light mt-2 text-white"> The Arctic Ocean freezes every winter and
