@@ -10,12 +10,35 @@
 
         <div class="flex space-x-3">
 
-            <a v-for="i in 4" :key="i" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
                 <span class="socialbtn text-[#1773EA]">
-                    <img src="/svg/twitter.svg" alt="" >
+                    <img src="/svg/linkedin.svg" alt="" >
                 </span>
+                
+            </a>
+            <a href="https://www.github.com/" target="_blank" rel="noopener noreferrer">
+                <span class="socialbtn text-[#1773EA]">
+                    <img src="/svg/github.svg" alt="" >
+                </span>
+                
+            </a>
+            <a href="https://www.telegram.com/" target="_blank" rel="noopener noreferrer">
+                <span class="socialbtn text-[#1773EA]">
+                    <img src="/svg/telegram.svg" alt="" >
+                </span>
+                
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <span class="socialbtn text-[#1773EA]">
+                    <img src="/svg/facebook.svg" alt="" >
+                </span>
+                
             </a>
 
+
+           
+            
+           
 
         </div>
 
