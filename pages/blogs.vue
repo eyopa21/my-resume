@@ -12,7 +12,7 @@
                         <div class="overflow-hidden rounded-lg">
                             <a  >
                                 <img class="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
-                                    src="../assets/img/person.jpg" alt="blog image" />
+                                    src="/unity.jpg" alt="blog image" />
                             </a>
                         </div>
                         <div class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]">
