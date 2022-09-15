@@ -2,7 +2,7 @@
   <div class=" scroll-smooth">
 
     <body class='h-full'>
-      <!--Nav /-->
+      
       <div class="text-gray-800 antialiased">
 
         <Body />
