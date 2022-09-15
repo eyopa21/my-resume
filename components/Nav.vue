@@ -3,11 +3,11 @@
         <div class="flex justify-between w-full px-4 lg:px-0  lg:bg-transparent  bg-black">
             <div class="flex justify-between w-full items-center space-x-4 lg:my-8 my-5">
                 <!-- website logo -->
-                <a class="text-5xl font-semibold" href="index.html">
+                <NuxtLink class="text-5xl font-semibold" to="/">
 
                     <div class="h-[26px] lg:h-[32px] text-white uppercase text-4xl ml-2 tracking-wider font-logo">eyoba
                     </div>
-                </a>
+                </NuxtLink>
                 <div class="flex items-center">
                     <!-- light and dark mode button -->
                     <!--button id="theme-toggle-mobile" type="button"
