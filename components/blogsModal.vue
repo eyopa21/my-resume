@@ -7,7 +7,7 @@
 
         <div class="dark:scrollbarDark scrollbarLight overflow-y-scroll max-h-[60vh] lg:max-h-[80vh]">
             <div class="pr-3 pb-2">
-                <img class="w-full md:h-[450px] object-cover rounded-xl mt-6" src="../assets/img/unity.jpg"
+                <img class="w-full md:h-[450px] object-cover rounded-xl mt-6" src="/unity.jpg"
                     alt="blog image" />
                 <div class="flex mt-4 text-tiny text-black dark:text-white">
                     <span>177 April</span>
