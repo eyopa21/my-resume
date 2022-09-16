@@ -1,6 +1,7 @@
 <template>
-    <div  :class="$route.name == 'index'? ' bg-[#111111] ':''" class="min-h-screen dark:bg-homeBg-dark bg-no-repeat bg-center bg-cover bg-fixed md:pb-16 w-full">
-        <Nav :class="$route.name == 'index'? '':'bg-black'"/>
+    <div 
+        class="min-h-screen dark:bg-homeBg-dark bg-no-repeat bg-center bg-cover bg-fixed md:pb-16 w-full">
+        <Nav :class="$route.name == 'index'? '':'bg-black'" />
         <div>
 
             <slot />
