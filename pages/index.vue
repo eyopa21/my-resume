@@ -1,6 +1,6 @@
 <template>
 
-    <div class="flex pb-8 in-h-screen dark:bg-homeBg-dark bg-no-repeat bg-center bg-cover bg-fixed md:pb-16 w-full flex-col items-center h-[100vh] md:h-[90vh] lg:h-[80vh] xl:h-[71vh] justify-center aos-init aos-animate"
+    <div class="  z-0 flex pb-8  flex-col items-center h-[100vh] md:h-[90vh] lg:h-[80vh] xl:h-[71vh] justify-center aos-init aos-animate"
         data-aos="fade">
 
         <img class="rounded-full w-[250px] h-[250px] 2xl:w-[280px] 2xl:h-[280px] object-fill"
