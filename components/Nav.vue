@@ -1,6 +1,6 @@
 <template>
-    <header class="bg-black flex justify-between items-center fixed top-0 left-0 w-full lg:static z-[1111111111]">
-        <div class="flex justify-between w-full px-4 lg:px-0  lg:bg-transparent  bg-black">
+    <header class=" flex justify-between items-center fixed top-0 left-0 w-full lg:static z-[1111111111]">
+        <div class="flex justify-between w-full px-4 lg:px-0  lg:bg-transparent  ">
             <div class="flex justify-between w-full items-center space-x-4 lg:my-8 my-5">
                 <!-- website logo -->
                 <NuxtLink class="text-5xl font-semibold" to="/">
@@ -38,9 +38,13 @@
                 <li>
                     <NuxtLink to="/about" class="menu-item-two"
                         :class="$route.name=='about' ? 'menu-item-two-active':'menu-item-two'">
-                        <span class="mr-2 text-base">
+                        <span class="mr-2 ">
                             <HomeIcon class="w-4 h-4 mb-[2px]" />
-                        </span> About
+                        </span>
+                        <div class="">
+
+                            About
+                        </div> 
                     </NuxtLink>
                 </li>
                 <li>

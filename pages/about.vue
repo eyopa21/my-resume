@@ -1,6 +1,6 @@
 <template>
     <div >
-        <div class="bg-black min-h-screen dark:bg-homeBg-dark bg-no-repeat bg-center bg-cover bg-fixed md:pb-16 w-full">
+        <div class=" min-h-screen dark:bg-homeBg-dark bg-no-repeat bg-center bg-cover bg-fixed md:pb-16 w-full">
             <div class="z-50">
                 <!-- container start -->
                 <div class="container">
@@ -8,7 +8,7 @@
     
                     <!-- about page contant start -->
                     <div>
-                        <div class="container lg:rounded-2xl bg-white dark:bg-[#111111] px-4 sm:px-5 md:px-10 lg:px-20">
+                        <div class="container lg:rounded-2xl dark:bg-[#111111] px-4 sm:px-5 md:px-10 lg:px-20">
                             <div data-aos="fade" class="aos-init aos-animate">
                                 <div class="py-12">
                                     <!-- about page title -->

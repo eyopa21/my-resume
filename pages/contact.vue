@@ -1,6 +1,6 @@
 
 <template>
-    <div class="bg-white lg:rounded-2xl dark:bg-[#111111]">
+    <div class=" lg:rounded-2xl bg-[#111111]">
         <div data-aos="fade" class="aos-init aos-animate">
             <div class="container px-4 sm:px-5 md:px-10 lg:px-20">
                 <div class="py-12">

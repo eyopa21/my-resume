@@ -3,7 +3,7 @@
     <div id="ex1" class="modal-container modal">
         <div class="relative">
 
-            <div @click="layout.blogs=''" class="h-12 w-12  text-white z-20 absolute flex -m-8 md:-m-12 bg-red-600"><XIcon class="w-12 h-12 hover:scale-105"/> </div>
+            <div @click="layout.blogs=''" class="h-12 w-12  text-gray-300 z-20 absolute flex -m-8 md:-m-12 "><XIcon class="w-12 h-12 hover:scale-105"/> </div>
 
         <div class="dark:scrollbarDark scrollbarLight overflow-y-scroll max-h-[60vh] lg:max-h-[80vh]">
             <div class="pr-3 pb-2">

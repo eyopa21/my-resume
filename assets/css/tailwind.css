@@ -201,11 +201,11 @@ input:-webkit-autofill:focus {
 }
 
 .close-light {
-    background-image: url(../images/icons/closelight.jpg);
+    background-image: url(/background/bg-dark.jpg);
 }
 
 .close-dark {
-    background-image: url(../images/icons/closeDark.png);
+    background-image: url(/background/bg-dark.jpg);
 }
 
 .modal a.close-modal {
@@ -1614,6 +1614,7 @@ video {
     transition-property: all;
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: blue;
 }
 
 .menu-item-two-active:hover {
@@ -1674,7 +1675,7 @@ video {
     --tw-bg-opacity: 1;
     background-color: rgb(33 36 37 / var(--tw-bg-opacity));
     --tw-text-opacity: 1;
-    color: rgb(166 166 166 / var(--tw-text-opacity));
+    color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .menu-item-two:hover {
@@ -1687,7 +1688,7 @@ video {
     --tw-bg-opacity: 1;
     background-color: rgb(33 36 37 / var(--tw-bg-opacity));
     --tw-text-opacity: 1;
-    color: rgb(166 166 166 / var(--tw-text-opacity));
+    color: rgb(188 180 180 / var(--tw-text-opacity));
 }
 
 .dark .menu-item-two:hover {
@@ -2515,7 +2516,7 @@ video {
 }
 
 .bg-homeBg {
-    background-image: url('../images/background/bg.jpg');
+    background-image: url('/background/bg-dark.jpg');
 }
 
 .bg-gradient-to-r {
@@ -2523,11 +2524,11 @@ video {
 }
 
 .bg-close-light {
-    background-image: url('../images/icons/closelight.jpg');
+    background-image: url('/background/bg-dark.jpg');
 }
 
 .bg-previewBg {
-    background-image: url('../images/background/previewbg.png');
+    background-image: url('/background/bg-dark.jpg');
 }
 
 .from-\[\#FA5252\] {
@@ -3355,15 +3356,15 @@ video {
 }
 
 .dark .dark\:bg-homeTwoBg-dark {
-    background-image: url('../images/background/bgtwo.jpg');
+    background-image: url('/background/bg-dark.jpg');
 }
 
 .dark .dark\:bg-homeBg-dark {
-    background-image: url('../images/background/bg-dark.jpg');
+    background-image: url('/background/bg-dark.jpg');
 }
 
 .dark .dark\:bg-close-dark {
-    background-image: url('../images/icons/closeDark.png');
+    background-image: url('/background/bg-dark.jpg');
 }
 
 .dark .dark\:text-white {

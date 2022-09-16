@@ -2,7 +2,7 @@
   <!-- modal start for item one  -->
   <div  class="modal-container modal flex flex-row mx-8 px-8">
     <div class="relative">
-        <div @click="layout.project=''" class="h-12 w-12  text-white z-20 absolute flex -m-8 md:-m-12 bg-red-600"><XIcon class="w-12 h-12 hover:scale-105"/> </div>
+        <div @click="layout.project=''" class="h-12 w-12  text-gray-300 z-20 absolute flex -m-8 md:-m-12"><XIcon class="w-12 h-12 hover:scale-105"/> </div>
 
     <div
       class="mt-4 md:mt-0 dark:scrollbarDark scrollbarLight overflow-y-scroll max-h-[60vh] lg:max-h-[80vh]">
