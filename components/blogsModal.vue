@@ -95,8 +95,8 @@
             </div>
 
         </div>
-        <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark ">Close</a>
-        <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark ">Close</a>
+      
+      
     </div>
 </div>
 </template>
