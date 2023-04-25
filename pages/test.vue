@@ -15,7 +15,7 @@
                             <div class="flex justify-between w-full items-center space-x-4 lg:my-8 my-5">
                                 <!-- website logo -->
                                 <a class="text-5xl font-semibold" href="index.html">
-                                    <img class="h-[26px] lg:h-[32px]" src="images/logo/logo.png" alt="logo">
+                                    <img class="h-[26px] lg:h-[32px]" src="/eyoba.jpg" alt="logo">
                                 </a>
                                 <div class="flex items-center">
                                     <!-- light and dark mode button -->
