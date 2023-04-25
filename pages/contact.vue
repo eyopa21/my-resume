@@ -11,11 +11,12 @@
                             <div
                                 class="flex flex-wrap bg-[#fcf4ff] dark:bg-transparent p-[30px] dark:border-[#212425] dark:border-2 gap-2 rounded-xl">
                                 <span class="w-8 mt-2">
-                                    <PhoneIcon class="w-8 h-8 text-white"/>
+                                    <PhoneIcon class="w-8 h-8 text-white" />
                                 </span>
                                 <div class="space-y-2">
                                     <p class="text-xl font-semibold dark:text-white"> Phone : </p>
-                                    <a href="tel:+251918784596" class="text-gray-lite text-lg dark:text-[#A6A6A6]"> +251918784596</a>
+                                    <a href="tel:+251918784596" class="text-gray-lite text-lg dark:text-[#A6A6A6]">
+                                        +251918784596</a>
                                     <!--p class="text-gray-lite text-lg dark:text-[#A6A6A6]"> +452 666 386 </p-->
                                 </div>
                             </div>
@@ -23,27 +24,28 @@
                             <div
                                 class="flex flex-wrap dark:bg-transparent bg-[#eefbff] p-[30px] dark:border-[#212425] dark:border-2 gap-2 rounded-xl">
                                 <span class="w-8 mt-2">
-                                    <MailIcon class="w-8 h-8 text-white"/>
+                                    <MailIcon class="w-8 h-8 text-white" />
                                 </span>
                                 <div class="space-y-2">
                                     <p class="text-xl font-semibold dark:text-white"> Email : </p>
-                                    <a href="mailto:jobtennis21@gmail.com" class="text-gray-lite text-xl dark:text-[#A6A6A6]"> jobtennis21@gmail.com
+                                    <a href="mailto:jobtennis21@gmail.com"
+                                        class="text-gray-lite text-xl dark:text-[#A6A6A6]"> jobtennis21@gmail.com
                                     </a>
-                                  
+
                                 </div>
                             </div>
 
                             <div
                                 class="flex flex-wrap dark:bg-transparent bg-[#f2f4ff] p-[30px] dark:border-[#212425] dark:border-2 gap-2 rounded-xl">
                                 <span class="w-8 mt-2">
-                                    <LocationMarkerIcon class="w-8 h-8 text-white"/>
+                                    <LocationMarkerIcon class="w-8 h-8 text-white" />
                                 </span>
                                 <div class="space-y-2">
                                     <p class="text-xl font-semibold dark:text-white"> Address : </p>
                                     <p class="text-gray-lite text-lg dark:text-[#A6A6A6]"> AddisAbaba, Ethiopia
                                     </p>
                                     <p class="text-gray-lite text-lg dark:text-[#A6A6A6]"> Bahirdar, Ethiopia
-                                         </p>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -59,15 +61,15 @@
                                         partnerships.</span>
                                 </h3>
 
-                                <form @submit.prevent="send()">
+                                <form @submit.prevent="sendd()">
                                     <!-- name input -->
-                                    <Input name="Name" label="Name" rule="required"/>
+                                    <Input name="Name" label="Name" rule="required" />
 
                                     <!-- email input  -->
-                                    <Input name="Email" label="Email" rule="email"/>
+                                    <Input name="Email" label="Email" rule="email" />
 
                                     <!-- massage input -->
-                                    <Input name="Message" label="Message" rule="required"/>
+                                    <Input name="Message" label="Message" rule="required" />
 
                                     <div
                                         class="transition-all duration-300 ease-in-out inline-block hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] rounded-lg mt-3">
@@ -88,10 +90,27 @@
 </template>
 <script setup>
     import { MailIcon, PhoneIcon, LocationMarkerIcon } from "@heroicons/vue/solid";
+    import axios from "axios";
 import { useForm } from "vee-validate";
-const { handleSubmit } = useForm();
+const { handleSubmit} = useForm();
 const send = handleSubmit((formValues) => {
   console.log(formValues);
 });
+
+//const res =await $fetch('/api/hello')
+//console.log(res);
+
+
+useHead({
+  title: "Contact page",
+  meta: [
+    {
+      name: "contact page",
+      content: "Eyob nigussie contact page",
+    },
+  ],
+});
+
+
 
 </script>

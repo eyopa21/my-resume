@@ -5,18 +5,18 @@
                 <!-- website logo -->
                 <NuxtLink class="text-5xl font-semibold" to="/">
 
-                    <div class="h-[26px] lg:h-[32px] text-white uppercase text-4xl ml-2 tracking-wider font-logo">eyoba
+                    <div class="h-[26px] lg:h-[32px] text-red-500   uppercase text-4xl ml-2 tracking-wider font-logo">eyoba
                     </div>
                 </NuxtLink>
                 <div class="flex items-center">
                     <!-- light and dark mode button -->
-                    <!--button id="theme-toggle-mobile" type="button"
+                    <button id="theme-toggle-mobile" type="button"
                         class="dark-light-btn lg:hidden w-[44px] h-[44px] ml-2">
                         <MoonIcon class="w-5 h-5" />
 
-                    </button-->
+                    </button>
                     <!-- mobile toggle button -->
-                    <button @click="showNav = !showNav" id="menu-toggle" type="button" class="menu-toggle-btn">
+                    <button @click="showNav = !showNav" id="menu-toggle" type="button" class="menu-toggle-btn lg:hidden">
                         <MenuIcon v-if="showNav == false" class="w-5 h-5" />
                         <XIcon v-else class="w-5 h-5" />
                     </button>
@@ -82,9 +82,14 @@
                 </li>
                 <li>
                     <!-- light and dark mode button -->
-                    <!--button @click="test" id="theme-toggle" type="button" class="dark-light-btn w-[44px] h-[44px] ml-2">
+                    <button @click="toggleTheme()" id="theme-toggle" type="button" class="dark-light-btn w-[44px] h-[44px] ml-2">
 
-                        <MoonIcon class="w-5 h-5" />
+                        <MoonIcon v-if=" themeMode =='light'" class="w-5 h-5" />
+                        <SunIcon v-else class="w-5 h-5 text-black" />
+                    </button>
+                    <!--button @click="test()" id="theme-toggle" type="button" class="dark-light-btn w-[44px] h-[44px] ml-2">
+
+                        dark
                     </button-->
 
                 </li>
@@ -146,13 +151,14 @@
             </ul>
         </nav>
         <!-- mobile menu end -->
-        {{getTheme}}
+        
     </header>
 </template>
 <script setup>
-import { MoonIcon, MenuIcon, XIcon, HomeIcon, UserIcon ,NewspaperIcon, BriefcaseIcon, IdentificationIcon, PhoneIcon } from "@heroicons/vue/solid";
+import { MoonIcon,StarIcon, SunIcon,MenuIcon, XIcon, HomeIcon, UserIcon ,NewspaperIcon, BriefcaseIcon, IdentificationIcon, PhoneIcon } from "@heroicons/vue/solid";
 
 const showNav = ref(false)
+const themeMode = ref('')
 
 const test = () => {
     if(process.client){
@@ -161,14 +167,29 @@ const test = () => {
     }
 }
 
-
-const lightMode = () => {
+// Light - Dark Mode
+const toggleTheme = (isFirstTime = false) => {
     if(process.client){
 
-localStorage.clear();
-}
-}
+    
+    let theme = window.localStorage.getItem('color-theme') || 'light';
+    themeMode.value = theme;
 
+    if (!isFirstTime) {
+        theme = theme === 'light' ? 'dark' : 'light';
+        themeMode.value = theme;
+    }
+    window.localStorage.setItem('color-theme', theme);
+
+    if (theme === 'dark') {
+        document.querySelector('body').classList.add('dark');
+    } else {
+        document.querySelector('body').classList.remove('dark');
+    }
+}
+};
+
+toggleTheme(true);
 
 const getTheme = computed(() => {
     if(process.client){

@@ -6,6 +6,8 @@
         <img class="rounded-full w-[250px] h-[250px] 2xl:w-[280px] 2xl:h-[280px] object-fill"
             src="/eyoba.jpg"
             alt="about avatar" />
+            <div class="mb-4 flex flex-row text-white bg-red-600 rounded mt-2 px-2 py-1 "><ExclamationCircleIcon class="text-white align-middle w-6 h-6 mr-1"/><div>This portfolio website is still in development</div> </div>
+            <p class="mb-4 text-[#7B7B7B] bg-red-600 px-2 rounded">But you can access it freely</p>
         <h3 class="mt-6 mb-1 text-5xl font-semibold dark:text-white"> Eyob Nigussie</h3>
         <p class="mb-4 text-[#7B7B7B]">Software Engineer</p>
 
@@ -50,6 +52,6 @@
 </template>
 
 <script setup>
-    import { PhoneIcon } from '@heroicons/vue/solid';
+    import { PhoneIcon, ExclamationCircleIcon } from '@heroicons/vue/solid';
     
 </script>

@@ -57,6 +57,14 @@
         link: 'https://gbi-date.web.app',
         image: '/gbi-date.png',
         date: 'date'
+      },
+      {
+        title: 'GeezByte-Meeting',
+        subtitle: 'Cloud meeting app',
+        description: 'You can meet your colleagues with GeezBye-meeting, By just sharing a link',
+        link: 'https://geezbyte-metting.netlify.app',
+        image: '/geez-meeting.png',
+        date: 'date'
       }, {
         title: 'My instagram',
         subtitle: 'Social media application for University students',

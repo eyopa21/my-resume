@@ -3,7 +3,7 @@
 
     <div>
    
-      <div class="bg-black" >
+      <div class="bg-gray-600" >
         <NuxtLayout name="default">
           <NuxtPage  />
         </NuxtLayout>

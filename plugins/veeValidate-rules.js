@@ -17,7 +17,7 @@ export default defineNuxtPlugin((nuxtApp) => {
             return true;
         }
 
-        return "Password must be between 6 and 10 characters";
+        return "Password must be 6 - 10 characters";
     });
     defineRule("confirmPassword", (value, [target], ctx) => {
         if (required(value) && value === ctx.form[target]) {
@@ -26,11 +26,11 @@ export default defineNuxtPlugin((nuxtApp) => {
 
         return "Passwords must match";
     });
-    defineRule("required", (value) => {
+    defineRule("required", (value, _, ctx) => {
         if (value && value.trim()) {
             return true;
         }
-        return "This is required";
+        return `${ctx.field} is required`;
     });
     defineRule("minmax", (value) => {
         if (
@@ -42,5 +42,23 @@ export default defineNuxtPlugin((nuxtApp) => {
         }
         return "Minimum 10 characters is needed";
     });
+    defineRule("number", (value, [min, max], ctx) => {
+        if (parseInt(value) > min && parseInt(value) < max) {
+
+
+            return true;
+        }
+
+        return "The value must be between 10 and 100"
+    })
+    defineRule('confirmed', (value, [target]) => {
+        if (value === target) {
+            return true;
+        }
+        return 'Passwords must match';
+    });
+
 
 });
+
+//number: [10, 20]
